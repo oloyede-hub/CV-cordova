@@ -19,7 +19,7 @@
 -->
 <html>
     <head>
-        <meta charset="utf-8">
+        <!-- <meta charset="utf-8"> -->
         <!--
         Customize this policy to fit your own app's needs. For more guidance, see:
             https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
@@ -29,17 +29,23 @@
             * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
                 * Enable inline JS: add 'unsafe-inline' to default-src
         -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <meta name="color-scheme" content="light dark">
+		<meta name="color-scheme" content="light dark"> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <link rel="stylesheet" href="css/app.min.css">
         <link rel="stylesheet" href="css/index.css">
-        <title>Hello World</title>
+        <title>Oloyede Sodiq curriculum Vitae</title>
     </head>
     <body>
-        <div class="app">
-            <div class="content__body">
+		<div class="app-page" data-page="home">
+			<div class="app-topbar">
+			  <div class="app-title">Home Page</div>
+			</div>
+			<div class="app-content">
+			  <div class="app-section">
 				<div class="home">
 					<img src="./img/solomon-mail.png" alt="sodiq-oloyede">
 					<h2>WELCOME!!!.</h2>
@@ -49,6 +55,19 @@
 						 <p>(+234)8155936018· sodiqoloyede295@gmail.com</p>
 						</div>
 				</div>
+				<div class="app-button" data-target="about">About</div>
+				<div class="app-button" data-target="skill">Skill</div>
+				<div class="app-button" data-target="experience">Experience</div>
+			  </div>
+			</div>
+		  </div>
+	  
+		  <div class="app-page" data-page="about">
+			<div class="app-topbar">
+			  <div class="app-button left" data-back data-autotitle></div>
+			  <div class="app-title">About</div>
+			</div>
+			<div class="app-content">
 				<div class="about">
 					<h2>About Me</h2>
 					<p>
@@ -59,6 +78,14 @@
 						apps
 					</p>
 				</div>
+			</div>
+		  </div>
+		  <div class="app-page" data-page="skill">
+			<div class="app-topbar">
+			  <div class="app-button left" data-back data-autotitle></div>
+			  <div class="app-title">Skill</div>
+			</div>
+			<div class="app-content">
 				<div class="skills">
 					<h2>Skills</h2>
 
@@ -73,6 +100,14 @@
 					<h4>EXPO</h4>
 					<h4>GIT & GITHUB</h4>
 				</div>
+			</div>
+		  </div>
+		  <div class="app-page" data-page="experience">
+			<div class="app-topbar">
+			  <div class="app-button left" data-back data-autotitle></div>
+			  <div class="app-title">Experience</div>
+			</div>
+			<div class="app-content">
 				<div class="experience">
 					<p>
 						<h2>Experience.</h2> 
@@ -91,8 +126,17 @@
 					<p> Thanks.🙏</p>
 				</div>
 			</div>
+		  </div>
+            <div class="content__body">
+					
+				
+				
+				
+			</div>
         </div>
-        <script src="cordova.js"></script>
+		<script src="cordova.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/app.min.js"></script>
         <script src="js/index.js"></script>
     </body>
 </html>

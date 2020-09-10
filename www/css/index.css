@@ -40,7 +40,6 @@ body {
     position:absolute;       /* position in the center of the screen */    
     left:50%;
     top:10%;
-    color:white;
     line-height: 20px;
     letter-spacing: 0.3px;
     height:50px;                   /* text area height*/
@@ -67,9 +66,12 @@ img {
     border: 1px solid white;
     border-radius: 50%;
     border-width: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .experience {
-    font-size: 20px;
     padding-bottom: 20px;
 }
 
@@ -82,6 +84,7 @@ img {
                                       /* offset horizontal: half of image width and text area width */
     }
 }
+
 
 h1 {
     
